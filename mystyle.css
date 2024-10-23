@@ -118,6 +118,7 @@ body{
 
   .body-item-1{
     grid-area: mainbody;
+    height: 300px;
   }
 
   .body-item-2{
