@@ -10,7 +10,7 @@ body{
   height: 720px;
   grid-template-areas: 
     "picture topbar"
-    "sidebar body"
+    "sidebar body";
 }
 
 .image1{
@@ -92,7 +92,9 @@ body{
   height: 400px;
 
   li{
-    margin: 15px;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -103,6 +105,28 @@ body{
   padding: 10px;
   border-radius: 10px;
   height: 400px;
+  display: grid;
+  grid-template-columns: 555px 235px;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "mainbody skills"
+    "contact skills";
+
+  .body-item{
+
+  }
+
+  .body-item-1{
+    grid-area: mainbody;
+  }
+
+  .body-item-2{
+    grid-area:  skills;
+  }
+
+  .body-item-3{
+    grid-area: contact;
+  }
 }
 
 .bold{
