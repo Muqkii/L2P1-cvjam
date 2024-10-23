@@ -1,9 +1,101 @@
-.item-1{
-  border:5px solid blue;
-  border-radius: 10px;
-  width: fit-content;
+body{
+  background-color: #feffd6;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 150px 800px;
+  grid-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  height: 720px;
+  grid-template-areas: 
+    "picture topbar"
+    "sidebar body"
 }
 
-.Container{
-  display: flex;
+.image1{
+  grid-area: picture;
+  border: 5px solid #caf2c2;
+  background-color: #e0ffcc;
+  /* padding: 10px; */
+  border-radius: 10px;
+  width: 140px;
+  height: 140px;
 }
+
+.grid-item-1{
+  /* grid-area: picture;
+  border: 5px solid #caf2c2;
+  background-color: #e0ffcc;
+  padding: 10px;
+  border-radius: 10px;
+  height: 120px; */
+}
+
+.grid-item-2{
+  grid-area: topbar;
+  border: 5px solid #caf2c2;
+  background-color: #e0ffcc;
+  padding: 10px;
+  border-radius: 10px;
+
+  /* li{
+    display: inline;
+    width: 100px;
+    height: 100px;
+  }
+  
+  a{
+    display: inline;
+    padding: 8px;
+    border: 5px solid #caf2c2
+  } */
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e0ffcc;
+  }
+  
+  li {
+    float: left;
+    margin: 5px;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 48px;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 5px solid #caf2c2;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #caf2c2;
+  }
+}
+
+.grid-item-3{
+  grid-area: sidebar;
+  border: 5px solid #caf2c2;
+  background-color: #e0ffcc;
+  padding: 10px;
+  border-radius: 10px;
+  height: 400px;
+}
+
+.grid-item-4{
+  grid-area: body;
+  border: 5px solid #caf2c2;
+  background-color: #e0ffcc;
+  padding: 10px;
+  border-radius: 10px;
+  height: 400px;
+}
+
